@@ -3,14 +3,32 @@
   margin: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "Noir";
+  src: url("./fonts/noir.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Lora";
+  src: url("./fonts/lora.ttf");
+}
+body {
+  overflow: hidden;
+}
+.menu-notice {
+  background-color: white;
+  padding: 16px;
+  border-radius: 500px 500px 0px 0px;
+}
 .carousel-container {
   width: 100%;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4vw;
   /* background: red; */
   font-size: 2vw;
   background-image: url("./bgtable.jpeg");
@@ -38,13 +56,28 @@
 }
 .swiper-container {
   width: 60%;
+  font-family: "Lora";
 }
 .swiper-slide h3 {
   color: white;
+  font-size: 2rem;
+  width: 80%;
   text-align: center;
 }
 .swiper-slide .price {
   display: none;
+}
+.menu-section {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 24px;
+}
+.menu-section ul {
+  list-style: none;
+  padding: 1rem;
+  line-height: 3vw;
 }
 .swiper-slide {
   display: flex !important;
@@ -59,26 +92,34 @@
   width: 60%;
 }
 
-body {
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+  fill: white !important;
+  stroke: white !important;
+}
+
+/* body {
   display: flex;
 
   flex-direction: column;
   justify-content: center;
   align-items: center;
   /* background: #ededed; */
-}
+/*} */
 
 .slider__container {
   display: block;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  border: 1px solid red;
+  border: 4vw solid #c7472a93;
   border-radius: 100%;
   position: absolute;
   z-index: 0;
+
   width: 70%;
-  top: -100%;
+  top: -50vw;
   /* transform: translate(0, -90%); */
   left: -10%;
 }
@@ -106,7 +147,7 @@ body {
   border-radius: 50%;
   /* background: rgba(255, 0, 0, 1); */
   display: flex;
-
+  font-size: 16px;
   justify-content: space-between;
   align-items: center;
   transform: translate(-50%, 50%);
@@ -116,18 +157,19 @@ body {
 .slider__container .slide__container .slide .details {
   color: white;
   align-self: flex-start;
-  font-size: 100px;
-
-  padding-top: 15%;
+  font-size: 5vw;
+  font-family: "Noir";
+  padding-top: 25%;
   position: absolute;
-  right: -30%;
+  right: -35vw;
 }
 .slider__container .slide__container .slide .title {
   max-width: 80%;
+  line-height: 1em;
 }
 .slider__container .slide__container .slide .price {
   max-width: 80%;
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 .slider__container .slide__container .slide img {
   width: 60%;
