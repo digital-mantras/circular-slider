@@ -1,8 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 @font-face {
   font-family: "Noir";
   src: url("./fonts/noir.woff2") format("woff2");
@@ -11,8 +6,13 @@
   font-family: "Lora";
   src: url("./fonts/lora.ttf");
 }
-body {
+.circle-carousel-main {
   overflow: hidden;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+  font-family: "Lora";
 }
 .menu-notice {
   background-color: white;
@@ -28,7 +28,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  gap: 4vw;
+  gap: 20px;
   /* background: red; */
   font-size: 2vw;
   background-image: url("./bgtable.jpeg");
@@ -119,7 +119,7 @@ body {
   z-index: 0;
 
   width: 70%;
-  top: -50vw;
+  top: -55vw;
   /* transform: translate(0, -90%); */
   left: -10%;
 }

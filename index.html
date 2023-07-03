@@ -7,70 +7,72 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div class="slider__container" id="rotatingContainer"></div>
+    <div class="circle-carousel-main">
+      <div class="slider__container" id="rotatingContainer"></div>
 
-    <div class="carousel-container">
-      <div class="menu-section">
-        <ul class="menu-list">
-          <li class="menu-items">Veg Munchurian</li>
-          <li class="menu-items">Veg Fried Rice</li>
-          <li class="menu-items">Crispy Tofu</li>
-          <li class="menu-items">Mixed Salads</li>
-          <li class="menu-items">Potato Wedges</li>
-        </ul>
-      </div>
+      <div class="carousel-container">
+        <div class="menu-section">
+          <ul class="menu-list">
+            <li class="menu-items">Veg Munchurian</li>
+            <li class="menu-items">Veg Fried Rice</li>
+            <li class="menu-items">Crispy Tofu</li>
+            <li class="menu-items">Mixed Salads</li>
+            <li class="menu-items">Potato Wedges</li>
+          </ul>
+        </div>
 
-      <div class="swiper-main">
-        <div class="swiper-container">
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./meal.png" />
-                <h3>Vegeterain Option A</h3>
-                <span class="price">Rs 4000</span>
+        <div class="swiper-main">
+          <div class="swiper-container">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./meal.png" />
+                  <h3>Vegeterain Option A</h3>
+                  <span class="price">Rs 4000</span>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./meal.png" />
+                  <h3>Vegeterain Option B</h3>
+                  <span class="price">Rs 4000</span>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./meal.png" />
+                  <h3>Vegeterain Option C</h3>
+                  <span class="price">Rs 4000</span>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./meal.png" />
+                  <h3>Vegeterain Option D</h3>
+                  <span class="price">Rs 4000</span>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./meal.png" />
+                  <h3>Vegeterain Option E</h3>
+                  <span class="price">Rs 4000</span>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./meal.png" />
+                  <h3>Vegeterain Option F</h3>
+                  <span class="price">Rs 4000</span>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./meal.png" />
+                  <h3>Vegeterain Option G</h3>
+                  <span class="price">Rs 4000</span>
+                </div>
               </div>
-              <div class="swiper-slide">
-                <img src="./meal.png" />
-                <h3>Vegeterain Option B</h3>
-                <span class="price">Rs 4000</span>
-              </div>
-              <div class="swiper-slide">
-                <img src="./meal.png" />
-                <h3>Vegeterain Option C</h3>
-                <span class="price">Rs 4000</span>
-              </div>
-              <div class="swiper-slide">
-                <img src="./meal.png" />
-                <h3>Vegeterain Option D</h3>
-                <span class="price">Rs 4000</span>
-              </div>
-              <div class="swiper-slide">
-                <img src="./meal.png" />
-                <h3>Vegeterain Option E</h3>
-                <span class="price">Rs 4000</span>
-              </div>
-              <div class="swiper-slide">
-                <img src="./meal.png" />
-                <h3>Vegeterain Option F</h3>
-                <span class="price">Rs 4000</span>
-              </div>
-              <div class="swiper-slide">
-                <img src="./meal.png" />
-                <h3>Vegeterain Option G</h3>
-                <span class="price">Rs 4000</span>
-              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+
+              <!-- <div class="swiper-pagination"></div> -->
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-
-            <!-- <div class="swiper-pagination"></div> -->
           </div>
         </div>
+        <div class="menu-notice">
+          All orders must be placed 24 hours before the desired delivery time.
+        </div>
       </div>
-      <div class="menu-notice">
-        All orders must be placed 24 hours before the desired delivery time.
-      </div>
+      <script type="module" src="/main.js"></script>
     </div>
-    <script type="module" src="/main.js"></script>
   </body>
 </html>
